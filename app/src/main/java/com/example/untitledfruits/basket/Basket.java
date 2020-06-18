@@ -28,8 +28,8 @@ public class Basket extends AppCompatActivity {
             //////////////////////"SAVE POINT": CONTINUE BUTTON IMPLEMENTATION//////////////////////
             @Override
             public void onClick(View v) {
-                Intent openBasket = new Intent();
-                startActivity(openBasket); gfcffcj
+                Intent openBasket = new Intent(getApplicationContext(), inBasket.class);
+                startActivity(openBasket);
             }
         }));
 
@@ -63,6 +63,7 @@ public class Basket extends AppCompatActivity {
 
         fruit a10 = new fruit("Mandarin","citrus",false);
         allFruit.add(a10.name);
+
     }
 
     //creates an array list and adapts objects to the ListView in the xml

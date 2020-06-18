@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         userList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inBasket = new Intent(getApplicationContext(), Basket.class);
-                startActivity(inBasket);
+                Intent openBasket = new Intent(getApplicationContext(), Basket.class);
+                startActivity(openBasket);
             }
         });
 
